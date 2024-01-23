@@ -1,0 +1,262 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.124.1805.0 (23.12)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"storeroomitemvaluation\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "roles": [
+      {
+        "name": "ORG_LEVEL_SECURITY",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "acb94450fd9f469fb6c7ebca70c62187"
+          }
+        ],
+        "modelPermission": "read"
+      },
+      {
+        "name": "New role",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "ff249db5f9274fbabe116ff521cf9919"
+          }
+        ],
+        "modelPermission": "read"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "storeroomitemvaluation",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "b7b1298e-1106-45bb-bb8d-0531fd0dbea0",
+            "sourceColumn": "id",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "574e2582-cf98-440d-a7b3-e054e5ebb9d6",
+            "sourceColumn": "status",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "accountId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "794a02bb-2286-484c-8948-e13a7f85594a",
+            "sourceColumn": "accountId",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "account",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "88245d0d-bd04-4046-9feb-daf34cf1efa4",
+            "sourceColumn": "account",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "materialItem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "512cb051-1894-449b-9f40-b1a8557bb8e0",
+            "sourceColumn": "materialItem",
+            "sourceProviderType": "nvarchar(max)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "storeroom",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "e35d6f45-81ac-4268-a0ec-d1fb1f945645",
+            "sourceColumn": "storeroom",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "d0b55bd1-edf1-4dd5-8481-6e76ce4a391c",
+            "sourceColumn": "category",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchaseCommodity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "f459b9c8-035b-4ad1-9fb0-0ab82f0b1e06",
+            "sourceColumn": "purchaseCommodity",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "inventoryType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "8274286b-fd69-46d7-a37d-772a1e4ba61d",
+            "sourceColumn": "inventoryType",
+            "sourceProviderType": "nvarchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "storeroomItemTotalValue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "isNullable": false,
+            "lineageTag": "0239a851-3384-478b-b812-4cb89237eac5",
+            "sourceColumn": "storeroomItemTotalValue",
+            "sourceProviderType": "decimal(18, 2)",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "1bfdc20a-9753-4538-a040-a04f0ddbc3cc",
+        "partitions": [
+          {
+            "name": "storeroomitemvaluation-5d05d86d-e3a9-4700-a1e0-88ad398afbdf",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"127.0.0.1,1433\", \"mentor_database\", [Query=\"SELECT",
+                "    a.id AS id,",
+                "    a.[status],",
+                "    a.accountId,",
+                "    account.name AS account,",
+                "    b.name AS materialItem,",
+                "    d.name AS purchaseCommodity,",
+                "    e.name AS category,",
+                "    c.name AS storeroom,",
+                "    f.name AS inventoryType,",
+                "    ISNULL(g.totalValue, 0) AS storeroomItemTotalValue",
+                "FROM storeroomitem a",
+                "INNER JOIN materialitem b ON a.materialItemId = b.id",
+                "INNER JOIN storeroomlocation c ON a.storeroomLocationId = c.id",
+                "LEFT JOIN systemlookup d ON d.id = b.purchaseCommodity",
+                "LEFT JOIN systemlookup e ON e.id = b.category",
+                "LEFT JOIN inventorytype f ON f.id = a.inventoryType",
+                "INNER JOIN account ON account.id = a.accountId",
+                "INNER JOIN storeroomitem_metrics g ON g.id = a.id\", ",
+                "CreateNavigationProperties=false])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

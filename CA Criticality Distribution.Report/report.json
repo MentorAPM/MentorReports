@@ -1,0 +1,118 @@
+{
+  "config": "{\"version\":\"5.40\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU11\",\"version\":\"5.40\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU11",
+            "path": "BaseThemes/CY22SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Untitled_design29718392478166633.png",
+            "path": "Untitled_design29718392478166633.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"024d417b29a67deb61d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.333333333333332,\"y\":95.17948717948718,\"z\":0,\"width\":799.1794871794872,\"height\":510.35897435897436}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"ca_report_001.Criticality Score (Rounded)\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(ca_report_001.Node Name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Criticality Score (Rounded)\"},\"Name\":\"ca_report_001.Criticality Score (Rounded)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Node Name\"}},\"Function\":5},\"Name\":\"CountNonNull(ca_report_001.Node Name)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Node Name\"}},\"Function\":5}}}]},\"columnProperties\":{\"CountNonNull(Query1.Node Name)\":{\"displayName\":\"Count of Nodes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Criticality Score (Rounded)'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#313541'\"}}}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}],\"valueAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Nodes'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#313541'\"}}}}},\"gridlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#DFE6EE'\"}}}}},\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleFontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}],\"dataPoint\":[{\"properties\":{\"showAllDataPoints\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"4D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"5D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#D92727'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"3D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"4D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#FC8F12'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"2D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"3D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#FFE433'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"1D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"2D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#6FCC43'\"}}},{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ca_report_001\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"1D\"}}}}}},\"Value\":{\"Literal\":{\"Value\":\"'#0DB8B5'\"}}}]}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Asset Count by Criticality'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B0BAC5'\"}}}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Canvas'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 510.35,
+          "width": 799.17,
+          "x": 21.33,
+          "y": 95.17,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"25193754837097d293c8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":315,\"y\":0,\"z\":3000,\"width\":648.75,\"height\":72.5}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"CA Criticality Distribution\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 72.50,
+          "width": 648.75,
+          "x": 315.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"73f037df2707a4d25769\",\"layouts\":[{\"id\":0,\"position\":{\"x\":896,\"y\":359.38461538461536,\"z\":1000,\"width\":384,\"height\":347.8974358974359}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"ca_report_001.Node Name\"},{\"queryRef\":\"Sum(ca_report_001.Criticality Score (Rounded))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Node Name\"}},\"Function\":2},\"Name\":\"ca_report_001.Node Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Criticality Score (Rounded)\"},\"Name\":\"Sum(ca_report_001.Criticality Score (Rounded))\"}]},\"columnProperties\":{\"Query1.Node Name\":{\"displayName\":\"Count\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"columnFormatting\":[{\"properties\":{\"styleHeader\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Query1.Node Name\"}}]}}}",
+          "filters": "[]",
+          "height": 347.89,
+          "width": 384.00,
+          "x": 896.00,
+          "y": 359.38,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"7c5d595582499cc3793c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":897.6410256410256,\"y\":270.7692307692308,\"z\":7000,\"width\":341.3333333333333,\"height\":80.41025641025641}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ca_report_001.Node Type\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Node Type\"},\"Name\":\"ca_report_001.Node Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.41,
+          "width": 341.33,
+          "x": 897.64,
+          "y": 270.76,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"846fc64534e2a3a4735b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1102.7692307692307,\"y\":0,\"z\":4000,\"width\":177.23076923076923,\"height\":96.82051282051282}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Untitled_design29718392478166633.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 96.82,
+          "width": 177.23,
+          "x": 1102.76,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8cb2956ca9acea5a3164\",\"layouts\":[{\"id\":0,\"position\":{\"x\":220,\"y\":617.5,\"z\":2000,\"width\":403.75,\"height\":102.5}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ca_report_001.Criticality Score (Rounded)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Criticality Score (Rounded)\"},\"Name\":\"ca_report_001.Criticality Score (Rounded)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericStart\":{\"expr\":{\"Literal\":{\"Value\":\"0.5D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Criticality Score (Rounded)\"}},\"Right\":{\"Literal\":{\"Value\":\"0.5D\"}}}}}]}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Rounded Criticality Score'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"numericInputStyle\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 102.50,
+          "width": 403.75,
+          "x": 220.00,
+          "y": 617.50,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9818033df6bc96fbf060\",\"layouts\":[{\"id\":0,\"position\":{\"x\":894.3589743589744,\"y\":170.66666666666666,\"z\":6000,\"width\":346.2564102564103,\"height\":100.1025641025641}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ca_report_001.Level\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Level\"},\"Name\":\"ca_report_001.Level\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"ca_report_001.Level\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Level\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'System'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.10,
+          "width": 346.25,
+          "x": 894.35,
+          "y": 170.66,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"df0690b4b423965eeba0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":894.3589743589744,\"y\":96.82051282051282,\"z\":5000,\"width\":342.97435897435895,\"height\":73.84615384615384}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ca_report_001.Analysis\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Analysis\"},\"Name\":\"ca_report_001.Analysis\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ca_report_001\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Analysis\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Hopkins Plant Analysis'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 73.84,
+          "width": 342.97,
+          "x": 894.35,
+          "y": 96.82,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

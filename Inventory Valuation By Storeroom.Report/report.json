@@ -1,0 +1,96 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU03\",\"version\":\"5.30\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]},\"creationSource\":\"QuickCreate\"}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU03",
+            "path": "BaseThemes/CY22SU03.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filterf212fd74e6be63bce5a3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"storeroomitemvaluation\"}},\"Property\":\"category\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter3e4de6b39b8164c177ae\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"storeroomitemvaluation\"}},\"Property\":\"inventoryType\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"Filter0524b7b085a157378a89\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"storeroomitemvaluation\"}},\"Property\":\"materialItem\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter9f5677f6e4b6f008be6e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"storeroomitemvaluation\"}},\"Property\":\"purchaseCommodity\"}},\"type\":\"Categorical\",\"howCreated\":1},{\"name\":\"Filter4557a1da96b0cae3e328\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"storeroomitemvaluation\"}},\"Property\":\"status\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"350e3310d2799cba4142\",\"layouts\":[{\"id\":0,\"position\":{\"x\":844.4444444444445,\"y\":475.55555555555554,\"z\":5000,\"width\":373.3333333333333,\"height\":97.77777777777777,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"storeroomitemvaluation.category\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"storeroomitemvaluation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"category\"},\"Name\":\"storeroomitemvaluation.category\",\"NativeReferenceName\":\"category\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Category'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 97.77,
+          "width": 373.33,
+          "x": 844.44,
+          "y": 475.55,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"374f75ccad56a0c0a311\",\"layouts\":[{\"id\":0,\"position\":{\"x\":844.9275362318841,\"y\":381.1594202898551,\"z\":4000,\"width\":372.46376811594206,\"height\":89.85507246376812,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"storeroomitemvaluation.inventoryType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"storeroomitemvaluation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"inventoryType\"},\"Name\":\"storeroomitemvaluation.inventoryType\",\"NativeReferenceName\":\"inventoryType\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Inventory Type'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 89.85,
+          "width": 372.46,
+          "x": 844.92,
+          "y": 381.15,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"39464ed7173148a65e67\",\"layouts\":[{\"id\":0,\"position\":{\"x\":41.152993348115295,\"y\":32.63858093126386,\"z\":2000,\"width\":1136.6740576496675,\"height\":105.0110864745011,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Inventory Value by Storeroom\",\"textStyle\":{\"fontSize\":\"40pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 105.01,
+          "width": 1136.67,
+          "x": 41.15,
+          "y": 32.63,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5efc724508aadea70ee9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":844.9275362318841,\"y\":176.81159420289856,\"z\":0,\"width\":372.46376811594206,\"height\":91.30434782608697,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"storeroomitemvaluation.status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"storeroomitemvaluation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"status\"},\"Name\":\"storeroomitemvaluation.status\",\"NativeReferenceName\":\"status\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Status'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.30,
+          "width": 372.46,
+          "x": 844.92,
+          "y": 176.81,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"783dd0488d3ee800d894\",\"layouts\":[{\"id\":0,\"position\":{\"x\":844.4444444444445,\"y\":267.77777777777777,\"z\":3000,\"width\":373.3333333333333,\"height\":92.22222222222221,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"storeroomitemvaluation.purchaseCommodity\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"storeroomitemvaluation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"purchaseCommodity\"},\"Name\":\"storeroomitemvaluation.purchaseCommodity\",\"NativeReferenceName\":\"purchaseCommodity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Purchase Commodity'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 92.22,
+          "width": 373.33,
+          "x": 844.44,
+          "y": 267.77,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"941d9a2e3ade3e0ffee7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40.57971014492754,\"y\":176.81159420289856,\"z\":1000,\"width\":739.1304347826087,\"height\":498.5507246376812,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"storeroomitemvaluation.storeroom\"},{\"queryRef\":\"Sum(storeroomitemvaluation.storeroomItemTotalValue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"storeroomitemvaluation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"storeroom\"},\"Name\":\"storeroomitemvaluation.storeroom\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"storeroomItemTotalValue\"}},\"Function\":0},\"Name\":\"Sum(storeroomitemvaluation.storeroomItemTotalValue)\",\"NativeReferenceName\":\"Total Value\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"storeroomItemTotalValue\"}},\"Function\":0}}}]},\"columnProperties\":{\"storeroomitemvaluation.storeroom\":{\"displayName\":\"Storeroom\"},\"Sum(storeroomitemvaluation.storeroomItemTotalValue)\":{\"displayName\":\"Total Value\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"grid\":[{\"properties\":{\"imageHeight\":{\"expr\":{\"Literal\":{\"Value\":\"81D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 498.55,
+          "width": 739.13,
+          "x": 40.57,
+          "y": 176.81,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"deb720470071245657b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":864.2128603104212,\"y\":573.3037694013303,\"z\":6000,\"width\":333.48115299334813,\"height\":102.1729490022173,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(storeroomitemvaluation.storeroomItemTotalValue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"storeroomitemvaluation\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"storeroomItemTotalValue\"}},\"Function\":0},\"Name\":\"Sum(storeroomitemvaluation.storeroomItemTotalValue)\",\"NativeReferenceName\":\"storeroomItemTotalValue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"storeroomItemTotalValue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Value'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 102.17,
+          "width": 333.48,
+          "x": 864.21,
+          "y": 573.30,
+          "z": 6000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
