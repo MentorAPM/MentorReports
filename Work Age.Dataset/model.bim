@@ -1,10 +1,10 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.109.782.0 (22.09)"
+        "value": "2.124.1805.0 (23.12)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -92,10 +92,6 @@
           {
             "name": "Query1",
             "filterExpression": "Query1[org] = USERNAME()"
-          },
-          {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
           }
         ]
       }
@@ -229,6 +225,21 @@
             "lineageTag": "7de40b60-a438-4c61-9c52-afbeab46fc50",
             "sourceColumn": "departmentId",
             "summarizeBy": "none"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[Department]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "cd5aa2f8-6adf-4575-beaf-d9a1b44ed227",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "58b85ef4-bf2c-439f-9f2f-418b083d116a",
@@ -684,10 +695,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"SortByColumn\"]"
+                "property": "SortByColumn"
               }
             ],
             "dataType": "string",
@@ -702,10 +714,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"DataType\"]"
+                "property": "DataType"
               }
             ],
             "dataType": "int64",
@@ -724,10 +737,11 @@
               {
                 "name": "PBI_FormatHint",
                 "value": "{\"isGeneralNumber\":true}"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"DataType\"]"
+                "property": "DataType"
               }
             ],
             "dataType": "double",

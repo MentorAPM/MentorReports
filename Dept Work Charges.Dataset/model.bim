@@ -1,10 +1,10 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.109.782.0 (22.09)"
+        "value": "2.124.1805.0 (23.12)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -125,10 +125,6 @@
           {
             "name": "workstage",
             "filterExpression": "workstage[org] = USERNAME()"
-          },
-          {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
           }
         ]
       }
@@ -1026,6 +1022,21 @@
             "lineageTag": "64b62361-0c1d-4b30-917a-8e7ca0964b13",
             "sourceColumn": "departmentId",
             "summarizeBy": "none"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[Department]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "f6260ebd-2bd7-4241-b09f-4381a52ec554",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "54645d80-172c-4a2f-96c8-335173807c29",
@@ -1387,12 +1398,13 @@
                 "value": "Automatic"
               },
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
                 "name": "PBI_FormatHint",
                 "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
               }
             ],
             "dataType": "double",

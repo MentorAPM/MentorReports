@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"workstage\",\"department\",\"systemlookup\"]"
+        "value": "[\"workstage\",\"department\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -64,33 +64,6 @@
         "toTable": "LocalDateTable_d6fc5cc8-54c4-4719-9412-2a787db22d83"
       },
       {
-        "name": "fe6833e3-5609-4003-b899-a3791ce7fcab",
-        "annotations": [
-          {
-            "name": "PBI_IsFromSource",
-            "value": "FS"
-          }
-        ],
-        "fromColumn": "workCategory",
-        "fromTable": "workstage",
-        "toColumn": "id",
-        "toTable": "systemlookup"
-      },
-      {
-        "name": "1639961a-707b-4eee-baa1-60e77b20b3f3",
-        "annotations": [
-          {
-            "name": "PBI_IsFromSource",
-            "value": "FS"
-          }
-        ],
-        "fromColumn": "workType",
-        "fromTable": "workstage",
-        "isActive": false,
-        "toColumn": "id",
-        "toTable": "systemlookup"
-      },
-      {
         "name": "f602166e-7610-4375-962c-8e3da8bfa765",
         "fromColumn": "departmentId",
         "fromTable": "workstage",
@@ -128,10 +101,6 @@
           {
             "name": "workstage",
             "filterExpression": "workstage[org] = USERNAME()"
-          },
-          {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
           }
         ]
       }
@@ -556,16 +525,24 @@
             "lineageTag": "46aee543-30d9-4393-b453-5be7bd1fff8f",
             "sourceColumn": "departmentId",
             "summarizeBy": "none"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[name]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "ae487f62-cce2-4b8e-8f39-6c5c64c9d71e",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "4c2d1257-a948-453c-ba1f-659a4c75023c",
-        "measures": [
-          {
-            "name": "ShortMonth",
-            "expression": "FORMAT('workstage'[createdAt], \"MMM\")",
-            "lineageTag": "5ba72a2a-07a6-4317-9ab9-0ccbfba2bffc"
-          }
-        ],
         "partitions": [
           {
             "name": "workstage-ad0bcc19-a526-4dbe-87f1-9b00a2cef54a",
@@ -1345,105 +1322,6 @@
           }
         ],
         "showAsVariationsOnly": true
-      },
-      {
-        "name": "systemlookup",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          }
-        ],
-        "columns": [
-          {
-            "name": "id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9c3ced98-fe54-4a4f-af91-701ad4e4b533",
-            "sourceColumn": "id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "org",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "adb0ab0b-51be-42ad-8a55-66c0b7b7e186",
-            "sourceColumn": "org",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "type",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5176117c-1233-40bf-93c6-6394268dd470",
-            "sourceColumn": "type",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "name",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3ebc0b9b-6822-4bc8-8f15-58571800a4f4",
-            "sourceColumn": "name",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "desc",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "595591c5-bb8e-47a6-b146-6500c5df100d",
-            "sourceColumn": "desc",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "bca51ff8-1a80-4c1a-a1b8-56ffa68fe06b",
-        "partitions": [
-          {
-            "name": "systemlookup-41185866-400a-472b-93fc-2d398f5ed9c9",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Sql.Databases(\"127.0.0.1,1433\"),",
-                "    mentor_database = Source{[Name=\"mentor_database\"]}[Data],",
-                "    dbo_systemlookup = mentor_database{[Schema=\"dbo\",Item=\"systemlookup\"]}[Data],",
-                "    #\"Removed Columns\" = Table.RemoveColumns(dbo_systemlookup,{\"createdAt\", \"updatedAt\", \"dataStoreId\", \"foreignId\", \"createdBy\", \"updatedBy\", \"storeroomitem(id)\", \"storeroomitem(id) 2\", \"storeroomitemnote\", \"workflow(id)\", \"workflow(id) 2\", \"workstage(id)\", \"workstage(id) 2\", \"workstageestimatedequipment\", \"workstageestimatedmaterial\", \"workstagefailure(id)\", \"workstagefailure(id) 2\"})",
-                "in",
-                "    #\"Removed Columns\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
       },
       {
         "name": "Calendar",

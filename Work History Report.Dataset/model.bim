@@ -187,10 +187,6 @@
           {
             "name": "workstage",
             "filterExpression": "workstage[org] = USERNAME()"
-          },
-          {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
           }
         ]
       }
@@ -620,6 +616,21 @@
             "lineageTag": "46aee543-30d9-4393-b453-5be7bd1fff8f",
             "sourceColumn": "departmentId",
             "summarizeBy": "none"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[name]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "5b7e1544-1e83-4664-8d39-0763353306f0",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "4c2d1257-a948-453c-ba1f-659a4c75023c",

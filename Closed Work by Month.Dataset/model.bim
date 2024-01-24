@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.118.1063.0 (23.06)"
+        "value": "2.124.1805.0 (23.12)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -118,10 +118,6 @@
           {
             "name": "role",
             "filterExpression": "role[org] = USERNAME()"
-          },
-          {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
           }
         ]
       }
@@ -231,6 +227,21 @@
             "formatString": "General Date",
             "isDataTypeInferred": true,
             "lineageTag": "610c1a32-2b45-4a8e-aac6-1f764a292931",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[name]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "8f9d56e2-1707-4b86-9ed0-81cd72a79338",
             "summarizeBy": "none",
             "type": "calculated"
           }

@@ -1,10 +1,10 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.109.782.0 (22.09)"
+        "value": "2.124.1805.0 (23.12)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -123,10 +123,6 @@
             "filterExpression": "workstage[org] = USERNAME()"
           },
           {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
-          },
-          {
             "name": "systemlookup",
             "filterExpression": "systemlookup[org] = USERNAME()"
           }
@@ -233,6 +229,21 @@
             "lineageTag": "6817fcc7-7e2b-4f5a-b219-086b4bc85478",
             "sourceColumn": "departmentId",
             "summarizeBy": "none"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[name]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "7bd862e8-1f52-460f-8a5a-c4c939d33231",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "1c17c0b9-a467-4948-900e-058509ba8569",
@@ -1666,12 +1677,13 @@
                 "value": "Automatic"
               },
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
                 "name": "PBI_FormatHint",
                 "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
               }
             ],
             "dataType": "double",

@@ -1,10 +1,10 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
         "name": "PBIDesktopVersion",
-        "value": "2.109.782.0 (22.09)"
+        "value": "2.124.1805.0 (23.12)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -20603,22 +20603,8 @@
           {
             "name": "role",
             "filterExpression": "role[org] = USERNAME()"
-          },
-          {
-            "name": "department",
-            "filterExpression": "department[org] = USERNAME()"
           }
         ]
-      },
-      {
-        "name": "New role",
-        "annotations": [
-          {
-            "name": "PBI_Id",
-            "value": "dec243556ed24aec818cb21775dcbdde"
-          }
-        ],
-        "modelPermission": "read"
       }
     ],
     "sourceQueryCulture": "en-US",
@@ -22279,6 +22265,21 @@
             "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
             "isDataTypeInferred": true,
             "lineageTag": "743e8b67-5c4e-4008-954e-e3b3cfad140b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "calculatedDepartment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(ISBLANK(RELATED(department[id])), \"(No Department)\", RELATED(department[name]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "fc293dd3-a483-48a2-aec1-9aca570fc85f",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -26264,12 +26265,13 @@
                 "value": "Automatic"
               },
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"FormatString\"]"
-              },
-              {
                 "name": "PBI_FormatHint",
                 "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "FormatString"
               }
             ],
             "dataType": "double",
@@ -26332,10 +26334,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
+              }
+            ],
+            "changedProperties": [
               {
-                "name": "PBI_ChangedProperties",
-                "value": "[\"IsHidden\"]"
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
