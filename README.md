@@ -6,12 +6,15 @@ Welcome to the official GitHub repository for **MentorAPM PowerBI Reports**. Thi
 
 ## Repository Structure
 
-- `/ReportName`: Contains the latest versions of PowerBI reports.
+- `/ReportName.pbib`: Is the openable PowerBI project file.
+- `/ReportName.Report`: Contains the Report Metadata. 
+- `/ReportName.Dataset`: Contains the Dataset Metadata. 
+
 
 ## How to Use This Repository
 
-1. **Explore Current Reports**: Navigate to the `/ReportName` directory to view the latest versions of our PowerBI reports.
-2. **Customize Reports**: Download the reports and tailor them according to your needs using Microsoft PowerBI.
+1. **Explore Current Reports**: Open the `/ReportName.pbib` file to view the latest versions of the PowerBI report.
+2. **Customize Reports**: Download the reports and tailor them according to your needs using Microsoft PowerBI. **All reports have the data source set to 127.0.0.1,1433. You will need to modify this to your datasource.**
 
 ## Contributing
 
@@ -23,13 +26,19 @@ The changelog provides a detailed list of updates and changes made to the report
 
 ### Latest Updates
 
+#### [2024.1.2] - [Janruary 24, 2024]
+- **Added**: Missing Power BI Project Files (*.pbip)
+
+#### [2024.1.3] - [Janruary 24, 2024]
+- **Fixed**: Broken Department Issues
+
+### Previous Updates
+
 #### [2024.1.1] - [Janruary 23, 2024]
 - **Added**: [All Reports]
 - **Fixed**: [Broken Reports]
 - **Updated**: [Broken Reports]
 - **Deprecated**: [Broken Reports]
-
-### Previous Updates
 
 *For a complete list of changes, please refer to the individual commit history.*
 
